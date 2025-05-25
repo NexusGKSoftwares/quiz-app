@@ -1,0 +1,98 @@
+/* Main container styling */
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background:rgb(182, 144, 144) ;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(168, 110, 110, 0.1);
+}
+
+/* Quiz content container */
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Question text styling */
+.question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Answer options layout */
+.options-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual option button styling */
+.option {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Option hover effect */
+.option:hover {
+  background-color: #0056b3;
+}
+
+/* Selected answer display */
+.selected-answer {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Navigation buttons container */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Navigation button styling */
+.nav-buttons button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navigation button hover effect */
+.nav-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Results section styling */
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Results heading */
+.result-container h2 {
+  color: #333;
+}
+
+/* Results text */
+.result-container p {
+  font-size: 18px;
+  color: #555;
+}
