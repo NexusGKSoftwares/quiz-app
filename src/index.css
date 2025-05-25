@@ -96,3 +96,18 @@
   font-size: 18px;
   color: #555;
 }
+
+
+.score-display {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+  }
+  .result-message {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  font-size: 18px;
+  color: green;
+  }

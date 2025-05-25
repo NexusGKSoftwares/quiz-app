@@ -84,6 +84,8 @@ function Quiz() {
     }
         , 0);
 
+    const result = userAnswers.every((answer, index) => answer === questionBank[index].answer);
+
     
 
     return (
@@ -111,16 +113,36 @@ function Quiz() {
                 <button onClick={goprev}>Previous</button>
                 <button onClick={gonext}>Next</button>
             </div>
-            <div className="result-container">
-                <h2>Quiz Completed!</h2>
-                <p>Your score: {score} out of {questionBank.length}</p>
+
+            <div className="progress">
+                <p>
+                    Question {currentQuestion + 1} of {questionBank.length}
+                </p>
+          
+            {currentQuestion === questionBank.length - 1 && (
+                <button onClick={() => alert(`Your score is ${score} out of ${questionBank.length}`)}>
+                    Submit Quiz
+                </button>
+            )}
             </div>
+            <div className="score-display">
+                <p>Score: {score} out of {questionBank.length}</p>  
+            </div>
+            {/* Display the result after quiz completion */}
+            {result && (
+                <div className="result-message">
+                    <p>Congratulations! You answered all questions correctly!</p>
+                </div>
+            )}
+            
         </div>
     );
 }
 
 
 export default Quiz;
+
+
 
 
 
